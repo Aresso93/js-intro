@@ -217,13 +217,13 @@
 //questo sopra ci stampa la stringa che volevamo, ma non è una stringa sola come invece chiedeva il task
 
 
-// let chessboard = ' '; //qui ho fatto una variabile vuota perché mi serviva per "scriverci dentro"
+//  let chessboard = ' '; //qui ho fatto una variabile vuota perché mi serviva per "scriverci dentro"
 
 // for (let i = 0; i < 8; i++) {
 
 //     if (i % 2 === 0) {
 //     chessboard = chessboard + ' # # # #\n'
-//     }
+//      }
 
 //     else {
 //         chessboard = chessboard + '# # # #\n'
@@ -236,15 +236,41 @@
 //VERSIONE HARD
 // la faremo col loop doppio
 
-const size = 4;                                            // con questo scheletro farà sempre una tabella con pari e dispari uguali, a livello di pattern.
+let chessboard = '';
+const size = 8;                                            // con questo scheletro farà sempre una tabella con pari e dispari uguali, a livello di pattern.
                                                            //nelle coordinate pari pari e dispari dispari, avrò lo spazio (vedi foto mia), mentre alle coordinate pari dispari o dispari pari, ci sarà l'asterisco
 
-for (let i = 0; index < size; i++) {
+for (let i = 0; i < size; i++) {
     
     for (let j = 0; j < size; j++) {
+        
+        if (i % 2 === 0) {
+            
+            if (j % 2 === 0) {
+                chessboard = chessboard + ' ';
+            }
+             else {
+                chessboard = chessboard + '#';
+    if (i % 2 !== 1) {
+        if (j % 2 === 1) {
+            
+            chessboard = chessboard + '#';
+
+        }
+        else {
+            chessboard = chessboard + '';
+        }
+        
+    } 
+        }
+}
+console.log (chessboard + '\n')
+}
+}
+
         //se i è pari {
             //se j è pari {
-              //agggiungo a chessboard uno spazio  
+              //aggiungo a chessboard uno spazio  
             //}
             //altrimenti aggiungo a chessboard un cancelletto
         //}
@@ -255,8 +281,8 @@ for (let i = 0; index < size; i++) {
                 //aggiungo uno spazio
             //}
         //}
-    }
+    
     //aggiungo a chessboard uno \n
+ 
 
-}
 
