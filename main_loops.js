@@ -251,22 +251,25 @@ for (let i = 0; i < size; i++) {
             }
              else {
                 chessboard = chessboard + '#';
-    if (i % 2 !== 1) {
-        if (j % 2 === 1) {
+             }
+        if (i % 2 !== 0) {
+
+            if (j % 2 === 0) {
             
             chessboard = chessboard + '#';
+            }
+            
+            else {
+            chessboard = chessboard + ' ';
+        }
+       
+    }
+    
+}
+console.log (chessboard)   
+} 
+}
 
-        }
-        else {
-            chessboard = chessboard + '';
-        }
-        
-    } 
-        }
-}
-console.log (chessboard + '\n')
-}
-}
 
         //se i è pari {
             //se j è pari {
