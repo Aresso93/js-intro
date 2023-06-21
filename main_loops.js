@@ -236,15 +236,21 @@
 //VERSIONE HARD
 // la faremo col loop doppio
 
-let chessboard = '';
+let chessboard =' ';
 const size = 8;                                            // con questo scheletro farà sempre una tabella con pari e dispari uguali, a livello di pattern.
                                                            //nelle coordinate pari pari e dispari dispari, avrò lo spazio (vedi foto mia), mentre alle coordinate pari dispari o dispari pari, ci sarà l'asterisco
 
-for (let i = 0; i < size; i++) {
+for (let i = 0; i < size; i++) 
+
+{
     
-    for (let j = 0; j < size; j++) {
+    for (let j = 0; j < size; j++) 
+    
+    {
         
-        if (i % 2 === 0) {
+        if (i % 2 === 0) 
+        
+        {
             
             if (j % 2 === 0) {
                 chessboard = chessboard + ' ';
@@ -252,6 +258,7 @@ for (let i = 0; i < size; i++) {
              else {
                 chessboard = chessboard + '#';
              }
+             
         if (i % 2 !== 0) {
 
             if (j % 2 === 0) {
@@ -261,12 +268,12 @@ for (let i = 0; i < size; i++) {
             
             else {
             chessboard = chessboard + ' ';
+
         }
-       
-    }
-    
+         
+    }; 
 }
-console.log (chessboard)   
+console.log (chessboard +'\n')  
 } 
 }
 
