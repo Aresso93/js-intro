@@ -270,9 +270,9 @@ for (let i = 0; i < size; i++)
         }
          
     }; 
-chessboard = chessboard + '\n'
+chessboard = chessboard + '\n';
 } 
-console.log (chessboard +'\n')
+console.log (chessboard +'\n');
 
 
         //se i è pari {
